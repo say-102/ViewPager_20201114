@@ -27,6 +27,8 @@ class MainActivity : BaseActivity() {
         mvpa = MainViewPagerAdapter(supportFragmentManager)
         mainViewPager.adapter = mvpa
 
+        mainTabLayout.setupWithViewPager(mainViewPager)
+
     }
 
 }

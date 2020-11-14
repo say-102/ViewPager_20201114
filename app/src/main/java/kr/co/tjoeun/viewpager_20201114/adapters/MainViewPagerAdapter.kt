@@ -8,6 +8,23 @@ import kr.co.tjoeun.viewpager_20201114.fragments.BirthYearFragment
 import kr.co.tjoeun.viewpager_20201114.fragments.NameFragment
 
 class MainViewPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
+
+    override fun getPageTitle(position: Int): CharSequence? {
+
+        if (position == 0) {
+            return "이름"
+        }
+
+        else if (position == 1) {
+            return "출생년도"
+        }
+
+        else {
+            return "거주지"
+        }
+
+    }
+
     override fun getCount(): Int {
         return 3
     }
